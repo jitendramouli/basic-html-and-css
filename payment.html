@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EASY PAY</title>
+<script>
+function validateForm() {
+    	var x = document.forms["form"]["firstname"].value;
+    	if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    	}
+	var y = document.forms["form"]["email"].value;
+	if (y == ""){ 
+		alert("Email Required");
+		return false;
+	}
+       var p = document.forms["form"]["phno"].value;
+        if(p<1000000000 || p>9999999999){
+                 alert("enter correct phone number");
+		return false;
+
+        }
+        var z = document.forms["form"]["up"].value;
+	var w = document.forms["form"]["upi"].value;
+	if (z == ""){
+		alert("UPI pin  Required");
+		return false;
+	}
+	if (w == ""){
+		alert("Confirm UPI PIN Required");
+		return false;
+	}
+        if(w!=z){
+          alert("UPI and conformed UPI are not same");
+		return false;
+	}else{
+          alert("thanks for paying through our website you will be notified by the car company you are paid"); 
+		return true;
+	} 
+}
+
+
+function autotab(current,to)
+{
+    if (current.getAttribute && current.value.length==current.getAttribute("maxlength")) 
+    {
+        to.focus() 
+    }
+}
+
+
+
+</script>
+<style>
+
+
+body{
+ background-image:url(1.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+
+
+
+}
+
+form{
+width: 250px;
+align:center;
+padding: 30px 100px 60px;
+background-color:rgba(214, 219, 223, 0.3); 
+border: 15px light brown;
+font-size: 13px;
+margin-right:auto; margin-left:auto;
+
+}
+input[type=text],[type=password],[type=number],[type=email],select {
+width: 100%;
+height: 34px;
+padding-left: 5px;
+margin-bottom: 20px;
+margin-top: 8px;
+color: #4f4f4f;
+font-size: 16px;
+}
+label{
+color:#4A235A;
+font-size: 14px;
+font-weight: bold;
+}
+#c1,#c2,#c3,#c4{
+width: 22%;
+height: 29px;
+padding-left: 0px;
+margin-bottom: 20px;
+margin-top: 8px;
+}
+
+
+
+</style>
+</head>
+<body>
+<h2 ><font color="#FDFEFE"><center>EASY PAYMENT</center></font></h2>
+<div>
+
+<form  name="form" method="post" id="Form">  
+    <label > NAME:</label><br>
+    <input type="text" name="firstname" value="your name" required><br><br>
+   <label> PHNO(+91):</label><br>
+    <input type="number" name="phno" id="phno" value="" required><br><br>
+    <label>EMAIL:</label><br>
+    <input type="email" name="email" value="name@example.com" required><br><br>
+    
+    <label>CARD NUMBER:</label><br>
+    <input type="number" maxlength="4" name="c1" id="c1" value=" " oninput="autotab(this, document.form.c2)" > 
+    <input type="number" maxlength="4" name="c2" id="c2" value=" " oninput="autotab(this, document.form.c3)">
+    <input type="number" maxlength="4" name="c3" id="c3" value=" "oninput="autotab(this, document.form.c4)">
+    <input type="number" maxlength="4" name="c4" id="c4" value=" " >
+    
+    <label>UPI PIN:</label><br>
+    <input type="password"       name="up" id="up"><br><br>
+    <label>CONFORM UPI PIN:</label><br>
+    <input type="password" name="upi" id="upi"><br><br >
+    <input type="submit" value="submit" onsubmit="return validateForm()">
+
+</form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.fa {padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body style="background-color:linen">
+<div style="background-color: lightslategray" align=center><h1>LUXYCARS</h1>
+<p align=right>by DJ MOULI and SUBHASH</p>
+</div>
+<br>
+<div class="topnav">
+    <a class="active" href=#home>HOME</a>
+    <a href=#about >ABOUT</a>
+    <a href=#needhelp>NEED HELP?</a>
+</div>
+<h1 id="home">welcome to luxy cars</h1>
+<p>    Get started with some passionated word of cars because there is a need to spend luxrious time in our life so, why wasting time find your favourite car and 
+  spend time with family or busieness mates in facny cars
+</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="audi.jpg" style="width:100%">
+  <div class="text"><b>It's a never ending battle of making your cars better and also trying to be better yourself -<i>dale earnhardt</i></b></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="car2.jpg" style="width:100%">
+  <div class="text"><b>A dream without ambition is like a car without gas... you're not going anywhere -<i>sean hampton</i></b></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="cars3.jpg" style="width:100%">
+  <div class="text"><b>There's three things men always talk about - women, sports, and cars -<i>mariolopez</i><b></div>
+</div></div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); 
+}
+</script>
+<h1>select your favourite car</h1>
+<a  href="audi.html"><img style="border-radius:50%" src="au1.jpg" /></a>
+<a href="ferrari.html" title="click here to view ferrari models" target="_blank"><img style="border-radius:50%" src="ferrari.jpg"> </a>
+<a href="lam.html" title="click here to view lamborgini models" target="_blank"><img style="border-radius:50%" src="l1.jpg"> </a>
+<a href="benz.html" title="click here to view benz models" target="_blank"><img style="border-radius:50%"src="benz.jpg"></a>
+<br>
+<h1 id="about">about </h1>
+<p>this platform was established on march 3rd,2008.It is the no.1 platform for any type of rental cars.
+  you can find number of you favourite car.This is top most platform in india,because we provide the best super luxury cars for rent at best price,
+  since all customers who want to spend their weekend or holiday and for travel for long drives.you can return at any branch of our organisation,
+  becuase we have maximum number of branches in order to favourable to customers.luxycars.com is a an automotive classified website focused on the United States, 
+  india and now is the second largest automotive classified site. Its headquarters are located in visakapatnam.
+  With new car prices reaching all-time highs, the allure of a late-model used car can be rather tempting. But how do you know what you're getting? Sure, 
+  you might save a few thousand dollars on the deal, but will you end up paying it all back in repairs? This scenario has long been the fly in the ointment for used car buyers, 
+  but there is a solution that can bring you peace of mind and still save you money in the long run.
+  It's called a certified car, and you can buy one from just about any dealer who also sells new cars. In this four-part series, we answer a few questions about CPO cars 
+  and whether one is right for you.</p>
+<h1 id="needhelp">help</h1>
+<p>Choosing a car these days can be a hassle. There are so many advertisements in the automobile industry trying to get you to but their vehicle. 
+  You end up choosing a vehicle with a catchy advertising jingle or phrase. Then later come to realize you are not satisfied with your decision, 
+  because of your lack of patience and lack to do any type of research on the vehicles of interest. Many times you end up limiting yourself to only a 
+  few selections. Then make your decision based on a familiar vehicle name rather than what type of vehicle suits you best. You should never make a decision 
+  based on a familiar name. There is too much information to be concerned with, for you to choose a vehicle based on a name you are …
+  Financing allows you to own the vehicle while making a monthly payment to the bank that loaned you the money, until the balance is paid off. 
+  Leasing has a slightly lower monthly payment,
+   but you do not own the vehicle. However you reserve the right to trade in your vehicle at any time for any reason. 
+Buying a new vehicle does not free it from mechanical failure. Most new vehicle’s come with a warranty that protects the car against any defect it might have.
+ You should look into how long the warranty last, and to what extent of the vehicle does the warranty cover. Without a warranty you would have to pay for 
+ whatever part the vehicle requires, out of your own pocket. Which brings us to the discrepancy between foreign and domestic vehicles.
+Foreign vehicles are stereotyped as being well made reliable automobiles, while domestic vehicles are viewed as unreliable and poorly manufactured. 
+This may have been the case about 15 years ago, but now due to the advancement of technology in the automotive industry, American manufacturers are producing top 
+of the line automobiles. 
+<br><b>For more information contact our supervisors ph.no:9055150927,9682651898;</b><br>
+<i>If you like our services then don't forget to follow us on facebook,twitter,google,instagram and linkedin</i>
+<br><br><br>
+<a href="#" class="fa fa-facebook">f</a>
+<a href="#" class="fa fa-twitter">t</a>
+<a href="#" class="fa fa-google">g</a>
+<a href="#" class="fa fa-linkedin">in</a>
+<a href="#" class="fa fa-yahoo">Y</a>
+</p>
+</body>
+</html> 
+

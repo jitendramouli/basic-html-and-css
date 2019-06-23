@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>lab exam</h1>
+<h2>alert box</h2>
+<button onclick="myFunction()">click me</button>
+<script>
+function myFunction() {
+    alert("you are not authorised these websites as per government rules");
+}
+</script>
+<h2>JavaScript Confirm Box</h2>
+<button onclick="myFunction1()">click me too</button>
+
+<p id="demo1"></p>
+
+<script>
+function myFunction1() {
+    var txt;
+    if (confirm("Press a button!")) {
+        txt = "You pressed OK!";
+    } else {
+        txt = "You pressed Cancel!";
+    }
+    document.getElementById("demo1").innerHTML = txt;
+}
+</script>
+</body>
+</html>
+
